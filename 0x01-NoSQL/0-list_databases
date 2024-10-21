@@ -1,0 +1,5 @@
+// listDatabases.js
+
+db.adminCommand('listDatabases').databases.forEach(function(database) {
+    print(' - ' + database.name);
+});
